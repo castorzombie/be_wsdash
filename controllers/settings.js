@@ -1,6 +1,6 @@
 const { response } = require('express');
 
-const Setting = require('../models/setting');
+const Setting = require('../models/Setting');
 
 
 const getSetting = async( req, res = response ) => {
