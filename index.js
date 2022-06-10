@@ -9,6 +9,8 @@ dbConnection();
 
 app.use( cors({ origin: true }) );
 
+app.use( express.static('public') );
+
 app.use( express.json() );
 
 app.use( '/api/auth', require('./routes/auth') );
